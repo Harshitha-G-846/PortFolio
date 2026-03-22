@@ -55,6 +55,7 @@ body {
     line-height: var(--line-height-base);
     color: var(--text-color);
     background-color: var(--background-color);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 header {
@@ -64,6 +65,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 header .container {
@@ -86,7 +88,7 @@ header nav ul li a {
     text-decoration: none;
     font-weight: var(--font-weight-bold);
     padding: 0.5rem 1rem;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease-in-out;
 }
 
 .theme-switcher {
@@ -219,13 +221,11 @@ header nav ul li a {
 
 .project-card {
   background-color: var(--surface-color);
-  
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
-  
   box-shadow: 0 4px 8px var(--shadow-color);
-
   overflow: hidden;
+  transition: background-color 0.3s ease-in-out, border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project-image {
@@ -253,15 +253,16 @@ header nav ul li a {
   text-decoration: none;
   font-weight: var(--font-weight-bold);
   border-radius: var(--border-radius);
-  
   background-color: var(--primary-color);
   color: var(--surface-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .project-links a:last-child {
   background-color: transparent;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border-color 0.3s ease-in-out;
 }
 
 
@@ -310,16 +311,16 @@ header nav ul li a {
   width: 100%;
   padding: calc(var(--spacing-unit) * 0.75);
   margin-bottom: calc(var(--spacing-unit) * 1.5);
-  
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
-  
   background-color: var(--surface-color);
-  
   font-family: inherit;
   font-size: inherit;
   color: var(--text-color);
-  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out,
+               box-shadow 0.2s ease-in-out,
+               background-color 0.3s ease-in-out,
+               color 0.3s ease-in-out;
 }
 
 #contact textarea {
@@ -361,14 +362,11 @@ header nav ul li a {
 
 footer {
   background-color: var(--surface-color);
-  
   padding: calc(var(--spacing-unit) * 2) 0;
-  
   border-top: 1px solid var(--border-color);
-  
   color: var(--text-color-light);
-  
   text-align: center;
+  transition: background-color 0.3s ease-in-out, border-top-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 footer .container {
